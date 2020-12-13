@@ -9,9 +9,9 @@
 #define DIAG            1   // Hardware diagnostics on startup (frees memory when disabled)
 #define KEYER           1   // CW keyer
 #define CAT             1   // CAT-interface
-#define F_XTAL 27005000     // 27MHz SI5351 crystal
-//#define F_XTAL 25004000   // 25MHz SI5351 crystal  (enable for WB2CBA-uSDX or SI5351 break-out board)
-//#define SWAP_ROTARY   1   // Swap rotary direction (enable for WB2CBA-uSDX)
+//#define F_XTAL 27005000     // 27MHz SI5351 crystal
+#define F_XTAL 25000000   // 25MHz SI5351 crystal  (enable for WB2CBA-uSDX or SI5351 break-out board)
+#define SWAP_ROTARY   1   // Swap rotary direction (enable for WB2CBA-uSDX)
 //#define QCX           1   // Supports older (non-SDR) QCX HW modifications (QCX, QCX-SSB, QCX-DSP with I/Q alignment-feature)
 //#define OLED          1   // OLED display, connect SDA (PD2), SCL (PD3)
 //#define DEBUG         1   // for development purposes only (frees cpu&memory when disabled, adds debugging features such as CPU, sample-rate measurement, additional parameters)
