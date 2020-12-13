@@ -4476,7 +4476,7 @@ void loop()
       menu = paramAction(NEXT_MENU, menu);  // auto probe next menu item (gaps may exist)
       encoder_val = 0;
     }
-    if(encoder_change || (prev_menumode != menumode)) paramAction(UPDATE_MENU, (menumode) ? menu : NULL);  // update param with encoder change and display
+    if(encoder_change || (prev_menumode != menumode)) paramAction(UPDATE_MENU, (menumode) ? menu : 0);  // update param with encoder change and display
     prev_menumode = menumode;
     if(menumode == 2){
       if(encoder_change){
